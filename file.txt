@@ -1,0 +1,30 @@
+UPSPLASH
+
+oil-change.jpg
+    the mechanic by tim mossholder
+
+call-out.jpg
+    by Kate Ibragimova
+
+gears.jpg
+    by Chad Kirchoff
+
+
+ADOBE STOCK
+
+motorcycle-repair,jpeg
+    by memorystockphoto
+
+
+
+
+ <h2>Taste the difference that fresh and local can make.</h2>
+            <p>If there is one thing that the people of Bloomington take seriously, it&rsquo;s their coffee. Verona
+                Coffee House provides an experience with every cup. Our products are locally sourced with our coffee
+                beans are roasted right here in Bloomington.</p>
+
+    If there is one thing that everyone takes seriously it&rsquo;s the quality of their car and motorcycle services. 
+    MW Repairs provides a family experience with every repair. we take pride in our customer service and quality of work to 
+    satify our customers in around the Chicagoland area.
+
+    

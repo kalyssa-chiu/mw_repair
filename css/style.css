@@ -1,0 +1,494 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    GENERAL / STRUCTURE
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+:root{
+    --red:#c4312a;
+    --dark-red: #70424c;
+    --blue: #849bb2;
+    --gray-blue: #485261;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    GENERAL / STRUCTURE
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ body {
+    background-color:#d4e0ec;
+    color: black;
+    margin-top: 5em;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    gap: 1rem;
+   }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    TYPOGRAPHY / IMAGES / BUTTONS
+    headline font - font-family: 'Gruppo', sans-serif;
+    body copy font - font-family: 'Montserrat', sans-serif;
+    red - #c4312a
+    dark-red - #70424c
+    blue - #849bb2
+    gray-blue - #852614
+
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Gruppo', sans-serif;
+
+}
+p,
+li,
+td,
+figcaption,
+address {
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+}
+button {
+    background-color: #485261;
+    border: none;
+    color: white;
+    padding: .5em 1.5em .5em 1.5em;
+}
+button:hover {
+    color:black;
+    border: 1px solid black;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+   HEADER
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em ;
+    background-color: white;
+    color:#70424c;
+    font-size: 10px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    NAVIGATION
+    menu items - #f7efdf
+    meny items hover - white
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+nav {
+    /* fixed position - black bkg color */
+    /* border: black 2px solid; */
+    width:100%;
+    position: fixed;
+    background-color: #485261;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+nav ul {
+    margin: 0;
+    padding: 1rem 3rem 1rem 1rem ; 
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav li {
+    list-style-type: none;
+    color:#f7efdf;
+    font-size: 12px;
+}
+nav li:hover {
+    color:#ba6644;
+}
+.nav-logo {
+    width: 175px;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color:#70424c;
+    padding: 10px 20px 10px 20px;
+    font-size: 10px;
+    font-weight: bolder;
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+    z-index: 1;
+    padding:5px 12px 5px 12px;
+    color:#70424c;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color:#849bb2;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    BODY
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+ /* Container needed to position the button. Adjust the width as needed */
+.call-out {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+.call-out img {
+    object-fit: cover;
+    width: 100%;
+    /* max-height: 1000px; */
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+.call-out .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #c4312a;
+    color: white;
+    font-size: 10px;
+    padding:  1px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+  
+.call-out .btn:hover {
+    background-color: #70424c;
+}
+
+/* ABOUT */
+.about {
+    display:flex;
+    margin: 1em 1em 1em 1em;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.about-image {
+    max-width:100%;
+    object-fit: fill;
+}
+.about-text{
+    font-size: 15px;
+
+}
+
+/* EXPERIENCE */
+.experience {
+    background-color:#485261;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.experience-text {
+    color: white;
+    font-size: 15px;
+    padding: 2em;
+    width:70%;
+}
+
+.experience-image {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+/* ASIDE */
+aside {
+  background-color:#70424c;
+  display:flex;
+  padding: 1em 1em 1em 1em;
+  margin: 1em 0 1em 0;
+  color: white;
+  justify-content: space-evenly;
+}
+aside svg:first-child {
+  display: none;
+}
+aside svg:last-child {
+  display: none;
+}
+
+#map { 
+    /* adjust map height in the media queries  */
+    margin: 2em 0 2em 0;
+    height: 300px;
+    z-index:-1;
+}
+
+/* Form  */
+.form{
+    background-color:white;
+    padding: 1em 2em 2em 2em;
+    margin-bottom: 2em;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type="submit"] {
+    background-color:#849bb2;
+    border-color:#485261;
+    color:#000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+ input[type="submit"]:hover{
+    background-color:#485261;
+    border-color:#849bb2;
+    color:#849bb2;
+ }
+
+/* ABOUT US IMAGES */
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    background-color:#485261;
+  }
+
+
+  .image-container img {
+    width: 45%; 
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    FOOTER
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+footer{
+    background-color: #485261;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* icons - if you don't use SVG, then adjust the CSS selectors for your code */
+
+footer svg {
+    padding: 0.25em;
+    color:white;
+}
+footer svg:hover {
+    color:#c4312a;
+}
+
+.name{
+    border-right: white solid 1px;
+    padding-right: 3em;
+}
+.address{
+    border-right: white solid 1px;
+    padding-right: 3em;
+}
+
+/*
+    MEDIA QUERIES
+*/
+/* mobile devices (mobile, 480px and up) */
+@media (min-width: 480px) {
+    .call-out .btn {
+        font-size: 12px;
+    }
+    header{
+        font-size: 12px;
+    }
+    .dropbtn {
+        padding: 10px 20px 10px 20px;
+        font-size: 12px;
+      }
+
+    .experience {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .experience-text {
+        padding: 2em;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .about-image {
+        max-width:50%;
+        object-fit: fill;
+    }
+    .about-text {
+        padding: 2em;
+    }
+    aside svg:first-child {
+        display: block;
+    }
+    aside svg:last-child {
+        display: block;
+    }
+
+
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .call-out .btn {
+        font-size: 15px;
+    }
+    header{
+        font-size: 15px;
+    }
+    .dropbtn {
+        font-size: 15px;
+      }
+    .experience {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .experience-text {
+        padding: 2em;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .about-image {
+        object-fit: fill;
+    }
+    .about-text {
+        padding: 3em;
+    }
+    /* aside svg:first-child {
+        display: block;
+    }
+    aside svg:last-child {
+        display: block;
+    } */
+
+    
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    nav li {
+        list-style-type: none;
+        color:#f7efdf;
+        font-size: 20px;
+    }
+    .call-out .btn {
+        font-size: 25px;
+    }
+    header{
+        font-size: 15px;
+    }
+    .dropbtn {
+        font-size: 15px;
+    }
+    .experience {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .experience-text {
+        max-width: 50%;
+        font-size: 25px;
+        padding: 2em;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+    .about-image {
+        object-fit: fill;
+    }
+    .about-text {
+        padding: 3em;
+        font-size: 25px;
+    }
+    /* aside svg:first-child {
+        display: block;
+    }
+    aside svg:last-child {
+        display: block;
+    } */
+
+}
+
